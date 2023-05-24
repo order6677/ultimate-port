@@ -12,11 +12,12 @@ const Home = () => {
                 <h2 className='text-4xl sm:text-7xl font-bold text-white'> I'm a Full Stack Developer</h2>
                 <p className='text-gray-500 py-4 max-w-md'>i love to work on web application using technologies like react,Tailwind,Next js and GraphQL.</p>
                 <div>
-                    <button className='text-white w-fit px-6 py-3 my-3 flex items-center rounded-md bg-gradient-to-r
+                    <button className='group text-white w-fit px-6 py-3 my-3 flex items-center rounded-md bg-gradient-to-r
                      from-cyan-500 to-blue-500 cursor-pointer'>
                         portfolio 
                             <span className='hover:rotate-90 duration-300'>
-                            <MdOutlineKeyboardArrowRight />
+                            <MdOutlineKeyboardArrowRight size={25}
+                            className='ml-1'/>
 
                             </span>
                         
