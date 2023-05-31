@@ -9,20 +9,25 @@ const Portfolio = () => {
     const portfolios = [
         {
             id:1,
-            src:json
+            src:json,
         },
         {
             id:2,
-            src:istall
+            src:istall,
         },
         {
             id:3,
-            src:imm
+            src:imm,
         },
         {
-            id:1,
-            src:json
+            id:4,
+            src:json,
         },
+        {
+            id:5,
+            src:form,
+
+        }
     ]
   return <div name="porfolio" className="bg-gradient-to-b from-black to-gray-800 w-full text-white
   md:h-screen">
@@ -45,7 +50,7 @@ const Portfolio = () => {
             portfolios.map(({id,src})=>(
 
                 
-            <div className="shadow-md shadow-gray-600 rounded-lg">
+            <div key={id}className="shadow-md shadow-gray-600 rounded-lg">
                 <img src={src} alt ="" className="rounded-md duration-200 hover:scale-105"/>
                 <div className="flex items-center justify-center">
                     <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
